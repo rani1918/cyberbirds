@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cyber Birds</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        .contact-section {
+            padding: 60px 0;
+        }
+
+        .contact-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            padding: 40px;
+        }
+
+        .section-title {
+            font-family: 'Nunito', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: #0d6efd;
+        }
+
+        .form-control, .btn {
+            border-radius: 10px;
+        }
+
+        .contact-info i {
+            color: #06BBCC;
+            font-size: 1.2rem;
+            margin-right: 12px;
+        }
+
+        .map-container iframe {
+            border-radius: 16px;
+            width: 100%;
+            height: 350px;
+            border: none;
+        }
+
+        .brand-color {
+            color: #06BBCC !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #000;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #06BBCC !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top">
+        <div class="container-fluid px-4">
+            <a href="index.html" class="navbar-brand">
+                <h2 class="m-0 brand-color"><i class="bi bi-shield-lock-fill me-2"></i>Cyber Birds</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cases.html">Cases</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cyber-tips.html">Security Tips</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="text-muted">Have questions or need cybersecurity help? We're here for you.</p>
+            </div>
+
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-4">
+                    <div class="contact-card">
+                        <h5 class="mb-4">Contact Information</h5>
+                        <p class="d-flex align-items-center"><i class="bi bi-geo-alt"></i> Sector 101 Noida, Uttar Pradesh 201304</p>
+                        <p class="d-flex align-items-center"><i class="bi bi-telephone"></i> +91 9412877489 ,9318305010</p>
+                        <p class="d-flex align-items-center"><i class="bi bi-envelope"></i> grani1794@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="contact-card">
+                        <form onsubmit="sendEmail(event)">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12 text-end">
+                                    <button type="submit" class="btn btn-primary px-5 py-2">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="row mt-5">
+                <div class="col-12 map-container">
+                    <iframe loading="lazy" allowfullscreen
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.123456789!2d77.3866!3d28.5444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5b123456789%3A0xabcdef1234567890!2sBhangel%2C%20Sector%20102%2C%20Noida%2C%20Uttar%20Pradesh%20201304!5e0!3m2!1sen!2sin!4v1603794290143!5m2!1sen!2sin"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Start -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+        <div class="row text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold brand-color">Cyber Birds</h5>
+                <p>Your trusted team for cybersecurity protection, digital safety, and cyber support solutions.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+                <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+                <p><a href="about.html" class="text-white text-decoration-none">About</a></p>
+                <p><a href="cases.html" class="text-white text-decoration-none">Cases</a></p>
+                <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="bi bi-geo-alt"></i> Sector 101 Noida, Uttar Pradesh 201304</p>
+                <p><i class="bi bi-envelope"></i> grani1794@gmail.com</p>
+                <p><i class="bi bi-phone"></i> +91 9412877489</p>
+            </div>
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+              
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+
+            const mailto = `mailto:grani1794@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+            window.location.href = mailto;
+        }
+    </script>
+</body>
+
+</html>

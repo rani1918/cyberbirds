@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CyberSecurity Awareness Hub - Comprehensive Digital Protection Guide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="cybersecurity, digital protection, online safety, cyber threats, data security" name="keywords">
+    <meta content="Comprehensive guide to cybersecurity awareness covering threats, prevention, best practices and emerging trends in digital protection." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        .threat-card {
+            transition: transform 0.3s;
+        }
+        .threat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .section-header {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .section-header:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #4e73df;
+        }
+        .checklist-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+        .checklist-item:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #4e73df;
+        }
+        .case-study {
+            border-left: 3px solid #4e73df;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #4e73df;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fa fa-shield-alt me-3"></i>CyberSecure</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="#threats" class="nav-item nav-link">Threats</a>
+                <a href="#protection" class="nav-item nav-link">Protection</a>
+                <a href="#trends" class="nav-item nav-link">Trends</a>
+                <a href="#resources" class="nav-item nav-link">Resources</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="login/signup.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Sign up<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">CyberSecurity Awareness Hub</h1>
+                    <p class="fs-5 text-white mb-4 pb-2">Your comprehensive guide to digital protection in an increasingly connected world</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Security</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Awareness</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Cybersecurity Overview Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="section-header">Why Cybersecurity Matters More Than Ever</h1>
+                    <p class="mb-4">In our hyper-connected digital age, cybersecurity has evolved from an IT concern to a fundamental life skill. Every 39 seconds, a hacker attack occurs somewhere on the internet, affecting individuals and organizations alike.</p>
+                    
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <div class="stat-number">$6 trillion</div>
+                                <p>Estimated global cybercrime costs in 2022</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <div class="stat-number">95%</div>
+                                <p>Of breaches caused by human error</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p>The digital landscape presents both unprecedented opportunities and risks. This guide provides comprehensive knowledge to navigate cyberspace safely, protect your digital assets, and understand emerging threats in our increasingly connected world.</p>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/cyber security.jpg" alt="Cybersecurity Concept" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cybersecurity Overview End -->
+
+    <!-- Threat Landscape Start -->
+    <div class="container-xxl py-5 bg-light" id="threats">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="section-header text-center mb-5">The Modern Cyber Threat Landscape</h1>
+                <p class="mb-5">Today's digital threats are more sophisticated, targeted, and damaging than ever before. Understanding these threats is the first step in defending against them.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Threat Card 1 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="threat-card bg-white p-4 rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2" style="width: 50px; height: 50px;">
+                                <i class="fas fa-fish text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-0 ms-3">Phishing & Social Engineering</h5>
+                        </div>
+                        <p>Deceptive attempts to steal sensitive information by disguising as trustworthy entities. Modern phishing uses psychological manipulation and often bypasses traditional security measures.</p>
+                        <ul class="mb-0">
+                            <li>Spear phishing targets specific individuals</li>
+                            <li>Whaling attacks target executives</li>
+                            <li>Vishing uses voice calls</li>
+                            <li>Smishing uses SMS/text messages</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Threat Card 2 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="threat-card bg-white p-4 rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2" style="width: 50px; height: 50px;">
+                                <i class="fas fa-lock text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-0 ms-3">Ransomware Attacks</h5>
+                        </div>
+                        <p>Malicious software that encrypts files or systems, demanding payment for their release. Modern ransomware often combines data encryption with data theft (double extortion).</p>
+                        <ul class="mb-0">
+                            <li>Average ransom demand: $200,000+</li>
+                            <li>Often targets backups</li>
+                            <li>Increasingly targets critical infrastructure</li>
+                            <li>Ransomware-as-a-Service (RaaS) available on dark web</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Threat Card 3 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="threat-card bg-white p-4 rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2" style="width: 50px; height: 50px;">
+                                <i class="fas fa-database text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-0 ms-3">Data Breaches</h5>
+                        </div>
+                        <p>Unauthorized access to confidential data, often resulting in exposure or theft. The average cost of a data breach is now over $4 million globally.</p>
+                        <ul class="mb-0">
+                            <li>Common causes: weak credentials, unpatched systems</li>
+                            <li>Stolen data often sold on dark web</li>
+                            <li>Can take months to detect</li>
+                            <li>Regulatory fines may apply (GDPR, CCPA)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Threat Card 4 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="threat-card bg-white p-4 rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2" style="width: 50px; height: 50px;">
+                                <i class="fas fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-0 ms-3">Mobile Threats</h5>
+                        </div>
+                        <p>With mobile becoming our primary computing device, attackers have shifted focus. Malicious apps, insecure Wi-Fi, and device theft pose significant risks.</p>
+                        <ul class="mb-0">
+                            <li>1 in 36 mobile devices has high-risk apps</li>
+                            <li>Fake banking apps common</li>
+                            <li>SIM swapping attacks increasing</li>
+                            <li>Many ignore mobile OS updates</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Threat Card 5 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="threat-card bg-white p-4 rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2" style="width: 50px; height: 50px;">
+                                <i class="fas fa-cloud text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-0 ms-3">Cloud Vulnerabilities</h5>
+                        </div>
+                        <p>Misconfigured cloud services and compromised accounts lead to massive data exposures. The shared responsibility model means users must secure their data.</p>
+                        <ul class="mb-0">
+                            <li>90% of organizations experienced cloud breaches</li>
+                            <li>Exposed S3 buckets common</li>
+                            <li>Shadow IT creates blind spots</li>
+                            <li>API vulnerabilities increasing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Threat Card 6 -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="threat-card bg-white p-4 rounded">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary rounded-circle p-2" style="width: 50px; height: 50px;">
+                                <i class="fas fa-robot text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-0 ms-3">AI-Powered Attacks</h5>
+                        </div>
+                        <p>Cybercriminals now use artificial intelligence to automate attacks, create convincing deepfakes, and bypass security systems with evolving malware.</p>
+                        <ul class="mb-0">
+                            <li>AI-generated phishing emails more convincing</li>
+                            <li>Automated vulnerability scanning</li>
+                            <li>Deepfake audio for social engineering</li>
+                            <li>Adaptive malware that learns defenses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Threat Landscape End -->
+
+    <!-- Protection Strategies Start -->
+    <div class="container-xxl py-5" id="protection">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="section-header text-center mb-5">Comprehensive Protection Strategies</h1>
+                <p class="mb-5">Effective cybersecurity requires a layered approach combining technology, processes, and user awareness. Below are essential strategies for individuals and organizations.</p>
+            </div>
+            
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Essential Cybersecurity Hygiene</h3>
+                    
+                    <div class="checklist-item">
+                        <h5>Password Management</h5>
+                        <p>Use long, unique passphrases for each account. Consider a reputable password manager. Enable multi-factor authentication (MFA) wherever possible.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Software Updates</h5>
+                        <p>Keep all systems patched and updated. Enable automatic updates when available. This includes operating systems, applications, and firmware.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Backup Strategy</h5>
+                        <p>Maintain regular, encrypted backups using the 3-2-1 rule: 3 copies, on 2 different media, with 1 offsite. Test restoration periodically.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Network Security</h5>
+                        <p>Use WPA3 encryption for Wi-Fi, change default router credentials, and consider a separate guest network. Use a VPN on public networks.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Device Security</h5>
+                        <p>Enable full-disk encryption, device tracking, and remote wipe capabilities. Use biometric authentication where available.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Advanced Protection Measures</h3>
+                    
+                    <div class="checklist-item">
+                        <h5>Email Security</h5>
+                        <p>Implement DMARC, DKIM, and SPF protocols. Train users to identify suspicious emails. Consider advanced threat protection solutions.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Endpoint Protection</h5>
+                        <p>Use next-gen antivirus with behavioral analysis. Implement application whitelisting and device control policies.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Access Control</h5>
+                        <p>Follow principle of least privilege. Implement Zero Trust architecture where possible. Regularly review access permissions.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Incident Response</h5>
+                        <p>Develop and test an incident response plan. Know who to contact for different types of breaches. Maintain cyber insurance if appropriate.</p>
+                    </div>
+                    
+                    <div class="checklist-item">
+                        <h5>Security Awareness</h5>
+                        <p>Conduct regular training with simulated phishing tests. Create a culture where security is everyone's responsibility.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="mb-4">Security Checklist by Device Type</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th>Device</th>
+                                <th>Essential Protections</th>
+                                <th>Advanced Protections</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Windows PC</td>
+                                <td>Antivirus, Firewall, Updates, Backup</td>
+                                <td>EDR solution, Application control, Disk encryption</td>
+                            </tr>
+                            <tr>
+                                <td>Mac</td>
+                                <td>Gatekeeper enabled, Firewall, Time Machine</td>
+                                <td>XProtect updates, SIP enabled, Full disk encryption</td>
+                            </tr>
+                            <tr>
+                                <td>iPhone</td>
+                                <td>Passcode, Find My iPhone, iOS updates</td>
+                                <td>VPN, Managed Apple ID, Mobile threat defense</td>
+                            </tr>
+                            <tr>
+                                <td>Android</td>
+                                <td>Screen lock, Play Protect, App permissions</td>
+                                <td>Work profile, Google Advanced Protection</td>
+                            </tr>
+                            <tr>
+                                <td>Router</td>
+                                <td>Changed credentials, WPA3, Firmware updates</td>
+                                <td>VLAN segmentation, IDS/IPS, Guest network</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Protection Strategies End -->
+
+    <!-- Case Studies Start -->
+    <div class="container-xxl py-5 bg-light">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="section-header text-center mb-5">Notable Cybersecurity Case Studies</h1>
+                <p class="mb-5">Real-world incidents provide valuable lessons in cybersecurity preparedness and response.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="case-study">
+                        <h3>SolarWinds Supply Chain Attack (2020)</h3>
+                        <p class="text-primary">Compromised software update affected 18,000 organizations</p>
+                        <p>Attackers inserted malicious code into SolarWinds' Orion software updates, creating a backdoor that affected numerous government agencies and Fortune 500 companies. The attack went undetected for months.</p>
+                        <h5>Key Takeaways:</h5>
+                        <ul>
+                            <li>Supply chain attacks can bypass traditional defenses</li>
+                            <li>Need for software bill of materials (SBOM)</li>
+                            <li>Importance of network segmentation</li>
+                            <li>Zero Trust architecture could have limited damage</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="case-study">
+                        <h3>Colonial Pipeline Ransomware (2021)</h3>
+                        <p class="text-primary">Largest fuel pipeline in US shut down for days</p>
+                        <p>A ransomware attack forced the shutdown of 5,500 miles of pipeline, causing fuel shortages across the East Coast. The company paid $4.4 million in Bitcoin, though most was later recovered by law enforcement.</p>
+                        <h5>Key Takeaways:</h5>
+                        <ul>
+                            <li>Single compromised password caused breach</li>
+                            <li>Critical infrastructure vulnerabilities</li>
+                            <li>Importance of offline backups</li>
+                            <li>Need for public-private collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="case-study">
+                        <h3>Log4j Vulnerability (2021)</h3>
+                        <p class="text-primary">Critical zero-day in ubiquitous Java library</p>
+                        <p>The Log4Shell vulnerability in the widely-used Log4j logging framework allowed remote code execution with minimal effort. It affected millions of systems worldwide across all industries.</p>
+                        <h5>Key Takeaways:</h5>
+                        <ul>
+                            <li>Risk of open-source dependencies</li>
+                            <li>Need for comprehensive asset inventory</li>
+                            <li>Importance of rapid patching capabilities</li>
+                            <li>Vulnerability scanning limitations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="case-study">
+                        <h3>Twitter Celebrity Hack (2020)</h3>
+                        <p class="text-primary">High-profile accounts compromised for Bitcoin scam</p>
+                        <p>Attackers gained access to Twitter's internal tools through social engineering, then took over accounts of Barack Obama, Elon Musk, and others to promote a Bitcoin scam that netted over $100,000.</p>
+                        <h5>Key Takeaways:</h5>
+                        <ul>
+                            <li>Social engineering targets employees</li>
+                            <li>Need for privileged access management</li>
+                            <li>Importance of monitoring internal tools</li>
+                            <li>Multi-person approval for sensitive actions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case Studies End -->
+
+    <!-- Emerging Trends Start -->
+    <div class="container-xxl py-5" id="trends">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="section-header text-center mb-5">Emerging Cybersecurity Trends</h1>
+                <p class="mb-5">The cybersecurity landscape continues to evolve rapidly. Here are key trends shaping digital protection strategies.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-brain text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">AI & Machine Learning</h5>
+                            <p>Both defenders and attackers are leveraging AI. Security tools use ML for anomaly detection, while hackers use it to automate attacks and create sophisticated malware.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-cloud text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">Cloud-Native Security</h5>
+                            <p>As organizations shift to cloud-native architectures, security solutions are being rebuilt for the cloud, with emphasis on identity, data protection, and workload security.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-user-shield text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">Zero Trust Adoption</h5>
+                            <p>The "never trust, always verify" approach is becoming standard, with micro-segmentation, continuous authentication, and least privilege access controls.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-broadcast-tower text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">5G Security Challenges</h5>
+                            <p>The expansion of 5G networks introduces new attack surfaces and requires rethinking security for massive IoT deployments and edge computing.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-question-circle text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">Quantum Threats</h5>
+                            <p>While still emerging, quantum computing threatens current encryption standards. Organizations are beginning to prepare for post-quantum cryptography.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-home text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">Remote Work Security</h5>
+                            <p>The permanent shift to hybrid work requires solutions for securing home networks, personal devices, and cloud collaboration tools.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-file-contract text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">Regulatory Pressure</h5>
+                            <p>New regulations worldwide (like NIS2, SEC rules) are forcing organizations to disclose breaches faster and maintain higher security standards.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="bg-primary rounded-circle p-3 mb-3 mx-auto" style="width: 70px; height: 70px;">
+                                <i class="fas fa-hand-holding-usd text-white fs-3"></i>
+                            </div>
+                            <h5 class="text-center mb-3">Ransomware Evolution</h5>
+                            <p>Ransomware gangs are becoming more organized, targeting backups, using triple extortion (adding DDoS), and focusing on critical infrastructure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Emerging Trends End -->
+
+    <!-- Resources & Tools Start -->
+    <div class="container-xxl py-5 bg-light" id="resources">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="section-header text-center mb-5">Cybersecurity Resources & Tools</h1>
+                <p class="mb-5">Leverage these free resources to enhance your digital protection.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Have I Been Pwned?</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Breach Notification Service</h6>
+                            <p class="card-text">Check if your email or phone number has been compromised in known data breaches.</p>
+                            <a href="https://haveibeenpwned.com" class="card-link" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">CISA Known Exploited Vulnerabilities</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Vulnerability Catalog</h6>
+                            <p class="card-text">Catalog of vulnerabilities actively exploited in the wild that should be prioritized for patching.</p>
+                            <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" class="card-link" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">OWASP Top 10</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Web Application Security</h6>
+                            <p class="card-text">Standard awareness document for developers describing critical web application security risks.</p>
+                            <a href="https://owasp.org/www-project-top-ten/" class="card-link" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Krebs on Security</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Security News Blog</h6>
+                            <p class="card-text">In-depth security news and investigation by renowned journalist Brian Krebs.</p>
+                            <a href="https://krebsonsecurity.com" class="card-link" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">NIST Cybersecurity Framework</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Security Best Practices</h6>
+                            <p class="card-text">Voluntary framework consisting of standards, guidelines, and best practices.</p>
+                            <a href="https://www.nist.gov/cyberframework" class="card-link" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">CyberChef</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Cyber Analysis Tool</h6>
+                            <p class="card-text">Powerful web app for encryption, encoding, compression and data analysis.</p>
+                            <a href="https://gchq.github.io/CyberChef/" class="card-link" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Resources & Tools End -->
+
+    <!-- Signup Start -->
+    <div class="container-xxl py-5" id="signup">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="section-header mb-4">Stay Updated on Cybersecurity Threats</h1>
+                    <p class="mb-4">Subscribe to receive monthly security bulletins, threat alerts, and protection tips directly to your inbox.</p>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <div class="stat-number">10,000+</div>
+                                <p>Security professionals subscribed</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="stat-card">
+                                <div class="stat-number">Zero</div>
+                                <p>Spam or data sharing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light p-4 rounded">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="interest">
+                                        <option value="personal">Personal Security</option>
+                                        <option value="business">Business Protection</option>
+                                        <option value="technical">Technical Security</option>
+                                        <option value="all">All Topics</option>
+                                    </select>
+                                    <label for="interest">Primary Interest</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Subscribe Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Signup End -->
+<!-- Footer Start -->
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+        <div class="row text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Cyber Birds</h5>
+                <p>Your trusted team for cybersecurity protection, digital safety, and cyber support solutions.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+                <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+                <p><a href="about.html" class="text-white text-decoration-none">About</a></p>
+                <p><a href="cases.html" class="text-white text-decoration-none">Cases</a></p>
+                <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="bi bi-geo-alt"></i> Sector 101 Noida, Uttar Pradesh 201304</p>
+                <p><i class="bi bi-envelope"></i> grani1794@gmail.com</p>
+                <p><i class="bi bi-phone"></i> +91 9412877489</p>
+            </div>
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+             
+            </div>
+        </div>
+    </div>
+</footer>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Form submission handling
+        document.getElementById('signupBtn').addEventListener('click', function() {
+            const email = document.getElementById('userEmail').value;
+            if(email) {
+                alert('Thank you for subscribing! You will receive our next security bulletin.');
+                document.getElementById('userEmail').value = '';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+    </script>
+</body>
+</html>

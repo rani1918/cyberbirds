@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cyber Birds</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><i class="fas fa-shield-alt me-3"></i>Cyber Birds</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="cases.html" class="nav-item nav-link">Cases</a>
+                <a href="cyber-tips.html" class="nav-item nav-link">Security Tips</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="login/signup.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Sign up<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/first1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Cyber Security Awareness</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Building a Safer Digital Future</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Raising cybersecurity awareness for a secure and informed digital world. Empowering individuals to stay safe online.</p>
+                                <a href="awareness.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="login/signup.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/cyber security image.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Cyber Security Awareness</h5>
+                                <h1 class="display-3 text-white animated slideInDown">Enhancing Security Through Cyber Awareness</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Educating individuals to recognize threats, protect data, and foster a secure digital environment.</p>
+                                <a href="awareness.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="login/signup.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-key text-primary mb-4"></i>
+                            <h5 class="mb-3">Use Strong Passwords</h5>
+                            <p>Strong passwords are long, random, and unique and include all four character types (uppercase, lowercase, numbers, and symbols). Password managers are a powerful tool to help you create strong passwords for each of your accounts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-shield-alt text-primary mb-4"></i>
+                            <h5 class="mb-3">Turn On MFA</h5>
+                            <p>You need more than a password to protect your online accounts; enabling MFA makes you significantly less likely to get hacked. Enable MFA on all your online accounts that offer it, especially email, social media, and financial accounts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-exclamation-triangle text-primary mb-4"></i>
+                            <h5 class="mb-3">Recognize & Report Phishing </h5>
+                            <p>Be cautious of unsolicited messages asking for personal information. Avoid sharing sensitive information or credentials with unknown sources. Report phishing attempts and delete the message.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-sync-alt text-primary mb-4"></i>
+                            <h5 class="mb-3">Update Software</h5>
+                            <p>Ensuring your software is up to date is the best way to make sure you have the latest security patches and updates on your devices. Regularly check for updates if automatic updates are unavailable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/Screenshot 2025-04-07 082431.png" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to Cyber Birds</h1>
+                    <p class="mb-4">At Cyber Birds, we are dedicated to spreading awareness about cybersecurity and helping individuals stay safe in the digital world.</p>
+                    <p class="mb-4">In today’s connected world, protecting your personal and professional data is more important than ever. Our mission is to educate and empower you with the knowledge to recognize cyber threats and respond effectively.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Cyber Threat Experts</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Online Support</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Digital Forensics Specialists</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Always-On Cyber Support</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Empowering Women in Cyber Safety</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Safety for Kids & Teens</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Awareness</h6>
+                <h1 class="mb-5">Cyber Cases</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="cases.html">
+                                <img class="img-fluid" src="https://www.fbi.gov/image-repository/innocent-images.jpg/@@images/image/high" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Operation Innocent Images</h5>
+                                    <small class="text-primary">sexually explicit</small>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="cases.html">
+                                <img class="img-fluid" src="img/credit_card.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Credit Card Fraud</h5>
+                                    <small class="text-primary">Online Fraud</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="cases.html">
+                                <img class="img-fluid" src="img/child" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Sexual Harassment</h5>
+                                    <small class="text-primary">Child Abuse</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="cases.html">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                            <h5 class="m-0">Online Marketing</h5>
+                            <small class="text-primary">fraud</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Start -->
+
+
+    <!-- Courses Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">TIPS</h6>
+                <h1 class="mb-5">Cyber Awareness Tips</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="cyber-tips.html" style="text-decoration: none; color: inherit;">
+                        <div class="course-item bg-light">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/course-1.jpg" alt="">
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                </div>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="mb-0"></h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <h5 class="mb-4">Use Strong and Unique Passwords</h5>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Rani</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>All time</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Any plateform</small>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="cyber-tips.html" style="text-decoration: none; color: inherit;">
+                        <div class="course-item bg-light">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/course-2.jpg" alt="">
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                </div>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="mb-0"></h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <h5 class="mb-4">Beware of Phishing Emails</h5>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Rani</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>All time</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Any plateform</small>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a href="cyber-tips.html" style="text-decoration: none; color: inherit;">
+                        <div class="course-item bg-light">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid" src="img/course-3.jpg" alt="">
+                                <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                </div>
+                            </div>
+                            <div class="text-center p-4 pb-0">
+                                <h3 class="mb-0"></h3>
+                                <div class="mb-3">
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                    <small class="fa fa-star text-primary"></small>
+                                </div>
+                                <h5 class="mb-4">Avoid Sensitive Activities on Public Wi-Fi</h5>
+                            </div>
+                            <div class="d-flex border-top">
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-user-tie text-primary me-2"></i>Rani</small>
+                                <small class="flex-fill text-center border-end py-2"><i class="fa fa-clock text-primary me-2"></i>All time</small>
+                                <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>Any Plateform</small>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Courses End -->
+        
+    <!-- Footer Start -->
+
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-md-left">
+        <div class="row text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-primary">Cyber Birds</h5>
+                <p>Your trusted team for cybersecurity protection, digital safety, and cyber support solutions.</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+                <p><a href="index.html" class="text-white text-decoration-none">Home</a></p>
+                <p><a href="about.html" class="text-white text-decoration-none">About</a></p>
+                <p><a href="cases.html" class="text-white text-decoration-none">Cases</a></p>
+                <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                <p><i class="bi bi-geo-alt"></i> Sector 101 Noida, Uttar Pradesh 201304</p>
+                <p><i class="bi bi-envelope"></i> grani1794@gmail.com</p>
+                <p><i class="bi bi-phone"></i> +91 9412877489</p>
+            </div>
+
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7 col-lg-8">
+               
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('signupBtn').addEventListener('click', function () {
+            const email = document.getElementById('userEmail').value;
+            if (email) {
+                const subject = encodeURIComponent("Cybersecurity Help Request");
+                const body = encodeURIComponent(`Hi, I need assistance with a cybersecurity issue. My email: ${email}`);
+                window.location.href = `mailto:grani1794@gmail.com?subject=${subject}&body=${body}`;
+            } else {
+                alert("Please enter your email before signing up.");
+            }
+        });
+    </script>
+</body>
+
+</html>
