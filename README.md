@@ -3,7 +3,7 @@
 A modern, responsive, and informative website designed to promote cybersecurity awareness. This platform educates users on essential cybersecurity concepts, real-world incidents, and best practices to stay safe online.
 
 ## 🔗 Live Demo
-[Live Site](https://your-live-demo-link-here.com)
+[Live Site](https://rani1918.github.io/cyberbirds/)
 
 ## 🚀 Features
 - Fully responsive layout using HTML, CSS, and JavaScript
@@ -23,11 +23,11 @@ A modern, responsive, and informative website designed to promote cybersecurity 
 ## 📦 How to Run Locally
 1. Clone the repository:
 ```bash
-git clone https://github.com/cyber-tech19/cyber.git
+git clone https://github.com/rani1918/cyberbirds.git
 ```
 2. Navigate to the project folder:
 ```bash
-cd cyber
+cd cyberbirds
 ```
 3. Open `index.html` in browser
 
