@@ -1,0 +1,181 @@
+  /* Enhanced About Page Styles */
+  .about-hero {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.about-hero p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+.profile-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+}
+
+.cofounder {
+    background-color: #f9fafb;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.profile-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.profile-image {
+    flex: 0 0 350px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-image img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.profile-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.profile-details h4 {
+    font-size: 1.3rem;
+    color: #4b5563;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.profile-details p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 600;
+    font-size: 1rem;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.mission-section {
+    background-color: #f3f4f6;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mission-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #1f2937;
+}
+
+.mission-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .profile-image {
+        flex: 0 0 auto;
+        max-width: 350px;
+        width: 100%;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 80px 0;
+    }
+    
+    .profile-details h2 {
+        font-size: 2rem;
+    }
+    
+    .profile-details h4 {
+        font-size: 1.1rem;
+    }
+    
+    .profile-details p {
+        font-size: 1rem;
+    }
+}
